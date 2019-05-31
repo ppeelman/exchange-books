@@ -1,9 +1,9 @@
-.TextField__Input,
-.TextField__Label {
+.Input__Input,
+.Input__Label {
   display: block;
 }
 
-.TextField__Input {
+.Input__Input {
   padding: 1.5rem 2rem;
   border: 1px solid var(--light-grey-1);
   outline: none;
@@ -13,29 +13,33 @@
   color: var(--primary-black);
 }
 
-.TextField__Input:focus {
+.Input__Input--invalid {
+  border: 1px solid orangered;
+}
+
+.Input__Input:focus:not(.Input__Input--invalid) {
   border-bottom: 1px solid var(--primary-color);
 }
 
-.TextField__Label {
+.Input__Label {
   padding: 0 2.1rem;
   transition: all 0.2s;
 }
 
-.TextField__Label,
-.TextField__Input::placeholder {
+.Input__Label,
+.Input__Input::placeholder {
   color: var(--light-grey-2);
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
-.TextField__Input + .TextField__Label {
+.Input__Input + .Input__Label {
   transform: translateY(-4rem);
   opacity: 0;
   font-size: 1.3rem;
 }
 
-.TextField__Input:not(:placeholder-shown) + .TextField__Label {
+.Input__Input:not(:placeholder-shown) + .Input__Label {
   opacity: 1;
   transform: translateY(0.5rem);
   font-size: 1rem;

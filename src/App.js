@@ -6,7 +6,7 @@ import { Route } from "react-router-dom";
 import "./App.module.css";
 import Layout from "./hoc/Layout/Layout";
 import BooksAvailable from "./containers/BooksAvailable/BooksAvailable";
-import Login from "./containers/Login/Login";
+import Login from "./containers/Auth/Login/Login";
 import AvailableDetail from "./containers/AvailableDetail/AvailableDetail";
 import ExchangeRequestFlow from "./containers/ExchangeRequestFlow/ExchangeRequestFlow";
 import MyExchanges from "./containers/MyExchanges/MyExchanges";
