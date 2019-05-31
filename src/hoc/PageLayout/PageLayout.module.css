@@ -1,0 +1,34 @@
+.TopSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: fixed;
+  top: var(--toolbar-height);
+  border-bottom: 0.5px solid var(--light-grey-2);
+  background-color: var(--color-white);
+  height: 8rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.Content {
+  margin-top: calc(var(--toolbar-height) + 8rem);
+  margin-bottom: 9rem;
+}
+
+.Action {
+  position: fixed;
+  background-color: var(--color-white);
+  bottom: 0;
+  height: 9rem;
+  width: 100%;
+  padding: 2rem;
+  border-top: 0.5px solid var(--light-grey-2);
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

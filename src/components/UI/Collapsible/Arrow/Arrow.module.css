@@ -1,0 +1,14 @@
+.Arrow {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-bottom: 0.5px solid var(--primary-black);
+  border-right: 0.5px solid var(--primary-black);
+  transform: rotate(-45deg);
+  content: "";
+  margin-right: 2rem;
+  transition: transform 0.3s;
+}
+
+.Arrow--down {
+  transform: rotate(45deg);
+}

@@ -1,0 +1,72 @@
+.Card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 25%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: stretch;
+  overflow: hidden;
+}
+
+.Requested {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(182, 62, 64, 0.15);
+  flex: 2;
+}
+
+.Person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.Person p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.Person button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.Picture {
+  width: 5rem;
+  height: 5rem;
+}
+
+.Offered {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.RequestedCover {
+  width: 50%;
+}
+
+.OfferedCover {
+  width: 100%;
+}
+
+.UnknownCover {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-grey-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.UnknownCover p {
+  font-size: 8rem;
+  color: var(--color-white);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 25%);
+}

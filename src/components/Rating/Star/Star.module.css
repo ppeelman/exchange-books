@@ -1,0 +1,8 @@
+.Star {
+  color: var(--light-grey-2);
+  font-size: 1.3rem;
+}
+
+.checked {
+  color: orange;
+}

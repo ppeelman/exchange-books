@@ -1,0 +1,4 @@
+.HorizontalLine {
+  width: 100%;
+  border: 0.5px solid var(--light-grey-2);
+}

@@ -1,0 +1,33 @@
+.TitelSection {
+  background-color: var(--light-grey-3);
+  text-align: center;
+  padding: 2rem;
+}
+
+.TitelSection__Title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.TitelSection__Author {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.MetadataSection {
+  padding: 3rem;
+}
+
+.CoverAndRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.Cover {
+  height: 25vh;
+  padding-right: 3rem;
+}

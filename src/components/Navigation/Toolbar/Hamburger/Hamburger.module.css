@@ -1,0 +1,35 @@
+:root {
+  --hamburger-height: 1.2rem;
+  --hamburger-width: 2rem;
+}
+
+.Hamburger {
+  top: 50%;
+  left: calc((var(--toolbar-height) - var(--hamburger-height)) / 2);
+  transform: translateY(-50%);
+}
+
+.Hamburger,
+.Hamburger::before,
+.Hamburger::after {
+  position: absolute;
+  background-color: var(--color-white);
+  width: var(--hamburger-width);
+  height: 1.5px;
+  display: inline-block;
+  content: "";
+  box-shadow: 0 0 1px rgba(0, 0, 0, 25%);
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Hamburger::before {
+  top: calc(var(--hamburger-height) / 2 * -1);
+}
+
+.Hamburger::after {
+  top: calc(var(--hamburger-height) / 2 * 1);
+}
+
+.open {
+  transform: rotate(90deg);
+}

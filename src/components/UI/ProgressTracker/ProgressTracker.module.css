@@ -1,0 +1,54 @@
+.StepContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProgressBar {
+  width: 90%;
+  position: absolute;
+  height: 0.8rem;
+  box-shadow: 0 0 0.5px var(--light-grey-2);
+  left: 5%;
+  top: 1.4rem;
+  opacity: 0.8;
+}
+
+.ProgressBar--zeroPerc {
+  background-color: var(--light-grey-3);
+}
+
+.ProgressBar--thirtythreePerc {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--primary-color) 33%,
+    var(--light-grey-3) 33%,
+    var(--light-grey-3) 100%
+  );
+}
+
+.ProgressBar--fiftyPerc {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--primary-color) 50%,
+    var(--light-grey-3) 50%,
+    var(--light-grey-3) 100%
+  );
+}
+
+.ProgressBar--sixtysevenPerc {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--primary-color) 66%,
+    var(--light-grey-3) 66%,
+    var(--light-grey-3) 100%
+  );
+}
+
+.ProgressBar--hundredPerc {
+  background-color: var(--primary-color);
+}

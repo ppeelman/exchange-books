@@ -1,0 +1,35 @@
+.Tabs {
+  position: relative;
+  height: 46rem;
+}
+
+.Tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Tabs > * {
+  position: absolute;
+  transition: all 0.3s;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.Left.Invisible {
+  transform: translateX(-100%);
+}
+
+.Left.Visible {
+  transform: translateX(0);
+}
+
+.Right.Invisible {
+  transform: translateX(100%);
+}
+
+.Right.Visible {
+  transform: translateX(0);
+}

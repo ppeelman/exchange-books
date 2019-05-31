@@ -1,0 +1,32 @@
+.Button {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.Button:focus {
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 25%);
+  transform: translateY(-1px);
+}
+
+.Button:active {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 25%);
+  transform: translateY(1px);
+}
+
+.Button--primary {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 25%);
+}
+
+.Button--secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}

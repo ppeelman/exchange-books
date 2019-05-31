@@ -1,0 +1,19 @@
+.Header {
+  background-color: var(--light-grey-3);
+  padding: 2.5rem;
+}
+
+.Header h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.Header p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.Body {
+  margin: 2rem;
+}

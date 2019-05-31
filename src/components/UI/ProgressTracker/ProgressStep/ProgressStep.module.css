@@ -1,0 +1,44 @@
+.Step {
+  text-align: center;
+}
+
+.Step__Circle {
+  position: relative;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--light-grey-3);
+  box-shadow: 0 0 1px var(--light-grey-2);
+  margin: 0 auto 0.5rem auto;
+  z-index: 10;
+}
+
+.Step--Current .Step__Circle {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 2px var(--primary-color);
+}
+
+.Step--Current .Step__Number {
+  color: var(--color-white);
+}
+
+.Step--Current .Step__Name {
+  font-weight: 500;
+  color: black;
+}
+
+.Step__Number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-black);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.Step__Name {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--light-grey-2);
+}

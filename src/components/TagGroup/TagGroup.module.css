@@ -1,0 +1,15 @@
+.TagBox {
+  padding: 0.3rem 1rem;
+}
+
+.TagBox:first-child {
+  padding-left: 0;
+}
+
+.TagBox:not(:last-child) {
+  border-right: 1px solid var(--primary-color);
+}
+
+.TagBox:last-child {
+  padding-right: 0;
+}

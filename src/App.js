@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// External imports
+import React from "react";
+import { Route } from "react-router-dom";
 
-function App() {
+// Internal imports
+import "./App.module.css";
+import Layout from "./hoc/Layout/Layout";
+import BooksAvailable from "./containers/BooksAvailable/BooksAvailable";
+import Login from "./containers/Login/Login";
+import AvailableDetail from "./containers/AvailableDetail/AvailableDetail";
+import ExchangeRequestFlow from "./containers/ExchangeRequestFlow/ExchangeRequestFlow";
+import MyExchanges from "./containers/MyExchanges/MyExchanges";
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Route path="/" exact component={BooksAvailable} />
+      <Route path="/login" exact component={Login} />
+      <Route path="/available/1" exact component={AvailableDetail} />
+      <Route path="/request-exchange" component={ExchangeRequestFlow} />
+      <Route path="/exchange-requests" component={MyExchanges} />
+    </Layout>
   );
 }
 

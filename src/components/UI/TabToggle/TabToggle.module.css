@@ -1,0 +1,38 @@
+.TabToggle {
+  min-width: 60%;
+  border-radius: 50px;
+  border: 0.5px solid var(--primary-color);
+  position: relative;
+  display: flex;
+}
+
+.TabOption {
+  width: 50%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.TabOption--selected {
+  color: var(--color-white);
+}
+
+.Selected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.Selected--toggled {
+  transform: translateX(100%);
+}

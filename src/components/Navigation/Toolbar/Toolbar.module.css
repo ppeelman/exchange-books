@@ -1,0 +1,13 @@
+:root {
+  --toolbar-height: 64px;
+}
+
+.Toolbar {
+  height: var(--toolbar-height);
+  width: 100%;
+  background-color: var(--primary-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
