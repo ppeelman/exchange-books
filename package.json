@@ -1,5 +1,6 @@
 {
   "name": "exchange-books",
+  "homepage": "https://ppeelman.github.io/exchange-books-build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
