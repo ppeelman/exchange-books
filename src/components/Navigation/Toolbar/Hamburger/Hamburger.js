@@ -8,7 +8,7 @@ const Hamburger = ({ toggle, open }) => {
     styles.push(myStyles.open);
   }
 
-  return <div className={styles.join(" ")} onClick={toggle} />;
+  return <div className={myStyles.HamburgerContainer} onClick={toggle}><div className={styles.join(" ")}  /></div>;
 };
 
 export default Hamburger;

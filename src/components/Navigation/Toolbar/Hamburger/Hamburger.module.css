@@ -1,11 +1,21 @@
 :root {
-  --hamburger-height: 1.2rem;
-  --hamburger-width: 2rem;
+  --hamburger-height: 1.5rem;
+  --hamburger-width: 2.2rem;
+}
+
+.HamburgerContainer {
+  position: absolute;
+  top: calc(50% - var(--hamburger-height) / 2);
+  width: var(--hamburger-width);
+  height: var(--hamburger-height);
+  left: calc((var(--toolbar-height) - var(--hamburger-height)) / 2);
+  cursor: pointer;
+  padding: 1rem;
 }
 
 .Hamburger {
   top: 50%;
-  left: calc((var(--toolbar-height) - var(--hamburger-height)) / 2);
+  left: 0;
   transform: translateY(-50%);
 }
 
